@@ -18,13 +18,14 @@ class ViewController: UIViewController {
 
 
     @IBAction func setTextButtonTapped(_ sender: Any) {
-        setValue(label, forKey: "Enter text to display in the label below")
+        
+        label.text = textField.text
+        
     }
     
     
     @IBAction func clearTextButtonTapped(_ sender: Any) {
-        setValue(label, forKey: "")
-        setValue(textField, forKey: "")
+        label.text = ""
     }
 }
 
